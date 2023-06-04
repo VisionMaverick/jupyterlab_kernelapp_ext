@@ -1,0 +1,23 @@
+{
+  "title": "Kernel App Main Menu",
+  "description": "Kernel App Main Menu settings.",
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-kernelapp-menu",
+        "label": "Kernel App",
+        "rank": 80,
+        "items": [
+          {
+            "command": "jlab-kernelapp:select",
+            "args": {
+              "origin": "from the menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "additionalProperties": false,
+  "type": "object"
+}
