@@ -1,8 +1,4 @@
-import {
-  SessionContext,
-  ISessionContext,
-  sessionContextDialogs
-} from '@jupyterlab/apputils';
+import { SessionContext, ISessionContext } from '@jupyterlab/apputils';
 
 import {
   ITranslator,
@@ -41,7 +37,7 @@ export class ExamplePanel extends StackedPanel {
     this._sessionContext = new SessionContext({
       sessionManager: manager.sessions,
       specsManager: manager.kernelspecs,
-      name: 'Extension Examples',
+      name: 'Extension Examples'
     });
 
     this._model = new KernelModel(this._sessionContext);
@@ -50,12 +46,12 @@ export class ExamplePanel extends StackedPanel {
     this.addWidget(this._example);
     void this._sessionContext
       .initialize()
-      .then(async (value) => {
+      .then(async value => {
         if (value) {
-          await sessionContextDialogs.selectKernel(this._sessionContext);
+          //await SessionContextDialogs.selectKernel(this._sessionContext);
         }
       })
-      .catch((reason) => {
+      .catch(reason => {
         console.error(
           `Failed to initialize the session in ExamplePanel.\n${reason}`
         );

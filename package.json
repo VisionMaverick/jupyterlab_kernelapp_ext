@@ -57,6 +57,7 @@
     "@jupyterlab/application": "^4.0.1",
     "@jupyterlab/apputils": "^4.1.1",
     "@jupyterlab/coreutils": "^5.1.0",
+    "@jupyterlab/launcher": "^4.0.1",
     "@jupyterlab/nbformat": "^4.0.1",
     "@jupyterlab/services": "^7.0.1",
     "@jupyterlab/settingregistry": "^4.0.1",
